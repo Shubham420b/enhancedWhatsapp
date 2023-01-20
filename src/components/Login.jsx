@@ -23,7 +23,7 @@ const Login = () => {
           alt="WhatsApp logo"
         />
         <h2>Sign in to WhatsApp</h2>
-        <button onClick={signIn}>Login with Gmail</button>
+        <button onClick={signIn}>Loggin with Gmail</button>
       </div>
     </div>
   );
