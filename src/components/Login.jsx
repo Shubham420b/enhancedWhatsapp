@@ -7,12 +7,13 @@ const Login = () => {
   const [{}, dispatch] = useStateValue();
   const signIn = () => {
     signInWithPopup(auth, provider)
-    .then((result) => {
-      dispatch({
-        type: "SET_USER",
-        user: result.user,
-      });
-    }).catch((err)=>console.log(err.message));
+      .then((result) => {
+        dispatch({
+          type: "SET_USER",
+          user: result.user,
+        });
+      })
+      .catch((err) => console.log(err.message));
   };
 
   return (
@@ -23,7 +24,7 @@ const Login = () => {
           alt="WhatsApp logo"
         />
         <h2>Sign in to WhatsApp</h2>
-        <button onClick={signIn}>Loggin with Gmail</button>
+        <button onClick={signIn}>Login with Gmail</button>
       </div>
     </div>
   );
