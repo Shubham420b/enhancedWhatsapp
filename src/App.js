@@ -7,6 +7,7 @@ import Login from "./components/Login";
 import { useStateValue } from "./context/stateContext";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./firebase";
+
 function App() {
   const [{ user }, dispatch] = useStateValue();
   useEffect(() => {
@@ -28,10 +29,6 @@ function App() {
             <Routes>
               <Route path="/" element={<Chat />} />
               <Route path="/room/:roomId" element={<Chat />} />
-              <Route
-                path="/googlecdd53aef9b03e7f9"
-                element={"../googlecdd53aef9b03e7f9.html"}
-              />
             </Routes>
           </div>
         </div>
