@@ -23,7 +23,7 @@ const Login = () => {
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png"
           alt="WhatsApp logo"
         />
-        <h2>Sign in to WhatsApp</h2>
+        <h2>Sign in to WhatsApp-clone</h2>
         <button onClick={signIn}>Login with Gmail</button>
       </div>
     </div>
